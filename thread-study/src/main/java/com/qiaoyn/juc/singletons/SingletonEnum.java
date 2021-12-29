@@ -35,6 +35,7 @@ public enum SingletonEnum {
         System.out.println("正常情况下，实例化两个实例是否相同："+(singleton1.hashCode() == singleton2.hashCode()));
         //其父类的构造器
         Constructor<SingletonEnum> constructor =  SingletonEnum.class.getDeclaredConstructor(String.class,int.class);
+       //反射无法操作私有属性，需要关闭安全检查
         constructor.setAccessible(true);
         SingletonEnum singleton3 = constructor.newInstance();
         System.out.println(singleton1.hashCode()+"\n"+singleton2.hashCode()+"\n"+singleton3.hashCode());
