@@ -17,11 +17,4 @@ public class HungrySingleton {
         return instance;
     }
 
-    public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            new Thread(() -> {
-                System.out.println(HungrySingleton.getInstance().hashCode());
-            }).start();
-        }
-    }
 }

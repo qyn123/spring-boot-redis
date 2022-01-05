@@ -30,8 +30,9 @@ public class DoubleSingleton {
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
         DoubleSingleton instance = DoubleSingleton.getInstance();
         DoubleSingleton instance1 = DoubleSingleton.getInstance();
-        //通过反射创建实例
+        //通过反射创建实例:通过无参构造创建实例
         Constructor<DoubleSingleton> declaredConstructor = DoubleSingleton.class.getDeclaredConstructor();
+        //关闭安全检验
         declaredConstructor.setAccessible(true);
         DoubleSingleton instance2 = declaredConstructor.newInstance();
         System.out.println(instance.hashCode());
