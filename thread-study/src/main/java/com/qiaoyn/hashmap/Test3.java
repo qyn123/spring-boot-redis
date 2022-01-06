@@ -1,6 +1,7 @@
 package com.qiaoyn.hashmap;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 /**
@@ -17,5 +18,6 @@ public class Test3 {
         map.put("a",13);
         System.out.println(3 & 14);
         System.out.println(map.get("a"));
+        new Hashtable<>();
     }
 }

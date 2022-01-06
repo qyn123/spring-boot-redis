@@ -15,7 +15,7 @@ public class SingletonTest {
 
             for (int i = 1; i <= M; i++) {
                 new Thread(() -> {
-                    System.out.println(Thread.currentThread().getName() + "的hashcode====>" + HungrySingleton.getInstance().hashCode());
+                    System.out.println(Thread.currentThread().getName() + "的hashcode====>" + SingletonNiMing.getInstance().hashCode());
                 },"Thread-" + i).start();
             }
 
