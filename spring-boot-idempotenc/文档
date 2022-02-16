@@ -1,0 +1,9 @@
+redis启动方法：
+ 1-win+R 打开命令行
+ 2-cd至redis目录，例如
+  D:\redis>
+ 3-输入
+ redis-server.exe redis.windows.conf
+
+
+ 参考文档：https://blog.csdn.net/zbw125/article/details/114697481
