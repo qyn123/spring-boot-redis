@@ -56,7 +56,6 @@ public class TokenController {
      * @return 执行结果
      */
     @GetMapping("/test")
-    @Transactional
     public String test(@RequestHeader("token") String token,
                        @RequestParam(value = "userId") Integer userId,
                        @RequestParam(value = "accountId") Integer accountId,
