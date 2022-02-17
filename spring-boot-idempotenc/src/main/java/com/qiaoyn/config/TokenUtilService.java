@@ -12,6 +12,7 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 幂等性验证
  * @author qiaoyanan
  * @description <p>获取token</p>
  * @date 2022-02-09 16:06
